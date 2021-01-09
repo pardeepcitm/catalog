@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: pardeepcitmcatalog 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pardeepcitmcatalog
+  template:
+    metadata:
+      labels:
+        app: pardeepcitmcatalog 
+    spec:
+      containers:
+        - name: pardeepcitmcatalog 
+          image: catalogp.azurecr.io/pardeepcitmcatalog
+          ports:
+          - containerPort: 80
