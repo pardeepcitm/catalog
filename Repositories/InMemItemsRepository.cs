@@ -12,7 +12,7 @@ namespace Catalog.Repositories
         private readonly List<Item> items = new()
         {
 
-            new Item { Id = Guid.NewGuid(), Name = "New", Price = 9, CreatedDate = DateTimeOffset.UtcNow },
+            new Item { Id = Guid.NewGuid(), Name = "Harimirch", Price = 9, CreatedDate = DateTimeOffset.UtcNow },
             new Item { Id = Guid.NewGuid(), Name = "Test", Price = 10, CreatedDate = DateTimeOffset.UtcNow },
             new Item { Id = Guid.NewGuid(), Name = "App", Price = 11, CreatedDate = DateTimeOffset.UtcNow }
         };
